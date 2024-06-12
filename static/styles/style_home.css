@@ -1,0 +1,45 @@
+.nav-bar-container{
+  background-color: white;
+}
+.nav-item>.active{
+  border-bottom: solid 3px rgb(99, 239, 99);
+}
+.main-container{
+  background-image: url("../image/bg.png");
+
+  height: 100vh;
+  
+
+}
+.first-page{
+  height: 88%;
+
+}
+.highlighted-green{
+  color: rgb(99, 239, 99);
+}
+.first-page{
+  position: relative;
+  margin-top:200px;
+  margin-left: 5%;
+}
+.first-page>.text{
+
+  font-family: "Unispace";
+  font-size: 50px;
+  word-spacing: 25px;
+
+}
+.first-page>img   {
+
+width: 600px;
+  position:absolute;
+  top: -150px;
+  right: 20%;
+  z-index: -50;
+  opacity:0.3;
+
+
+
+
+}

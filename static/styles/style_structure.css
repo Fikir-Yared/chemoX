@@ -1,0 +1,20 @@
+.nav-bar-container{
+  background-color: white;
+}
+.nav-item>.active{
+  border-bottom: solid 3px rgb(99, 239, 99);
+}
+
+
+
+.highlighted-green{
+  color: rgb(99, 239, 99);
+}
+#main-container{
+  margin-top: 50px;
+}
+/* .molecule-image-container{
+  background-color: rgb(173, 173, 173);
+  width: 520px;
+  height: 520px;
+} */
