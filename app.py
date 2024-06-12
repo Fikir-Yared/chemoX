@@ -16,7 +16,7 @@ def structure():
     return render_template("structure.html")
 
 
-@app.route("/periodic_table")
+@app.route("/periodic_stable")
 def periodic_table():
 
     return render_template("periodic_table.html")
