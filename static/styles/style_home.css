@@ -1,5 +1,5 @@
 .nav-bar-container{
-  background-color: black;
+  background-color: white;
 }
 .nav-item>.active{
   border-bottom: solid 3px rgb(99, 239, 99);
