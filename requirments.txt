@@ -1,3 +1,6 @@
 Flask
 pubchempy
 gunicorn
+chempy
+mendeleev
+Pillow
