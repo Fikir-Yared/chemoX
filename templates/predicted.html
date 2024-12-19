@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaction</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link  rel="stylesheet" href="{{ url_for('static', filename='styles/style_structure.css') }}" />
+    <script src="/static/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid nav-bar-container ">
+        <a class="navbar-brand float-start" href="#"><img src="{{ url_for('static', filename='image/atomic.png') }}" alt="" /> ASTU<span class="highlighted-green">chem<span></a>
+        <button
+          class="navbar-toggler float-end"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link  " aria-current="page" href="{{url_for('home')}}">HOME</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link " aria-current="page" href="{{ url_for('periodic_table') }}"
+                >PERIODIC TABLE</a
+              >
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link active" aria-current="page" href="/calc">REACTION</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" aria-current="page" href="{{ url_for('structure') }}">STRUCTURE</a>
+            </li>
+            <li class="nav-item mx-lg-3">
+              <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container" id="main-container">
+
+
+
+
+
+       
+    <div class="my-auto mx-auto" style="width: 90%;">
+        <div class="d-flex justify-content-between mb-3" id="equation">
+            <div>
+                <input class="w-100" disabled type="text" value="{{ A }}">
+            </div>
+            +
+            <div>
+                <input class="w-100" disabled type="text" value="{{ B }}">
+            </div>
+            →
+            <div class="d-flex justify-content-center" id="products">
+                <input disabled type="text" value="{{ prod }}">
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <image src="/lewis_api/{{ reac_reagents[0] }}" alt="loading error" width="30%" height="30%"></image>
+            <image src="/lewis_api/{{ reac_reagents[1] }}" alt="loading error" width="30%" height="30%"></image>
+            <image src="/lewis_api/{{ prod_reagents[0] }}" alt="loading error" width="30%" height="30%"></image>
+        </div>
+        <a class="btn btn-primary mt-3" href="/">Try Again</a>
+    </div>
+
+
+        </div>
+    
+    
+  </body>
+</html>
+
